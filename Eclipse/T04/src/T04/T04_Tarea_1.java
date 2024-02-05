@@ -1,6 +1,6 @@
 package T04;
 
-public class T04_Tarea {
+public class T04_Tarea_1 {
 
 	public static void main(String[] args) {
 		int a=5;
