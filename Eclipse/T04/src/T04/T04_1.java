@@ -1,3 +1,4 @@
+package T04;
 
 public class T04_1 {
 
@@ -5,7 +6,7 @@ public class T04_1 {
 		
 		int operador=10;
 		int x=0;			
-		operador++	;	
+		operador++;	
 		operador++;
 		operador--;
 		x=operador++;
