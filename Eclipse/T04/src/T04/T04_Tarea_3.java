@@ -23,9 +23,15 @@ public class T04_Tarea_3 {
 	System.out.println("N/M es "+(N/M));
 	System.out.println("N%M es "+(N%M));
 	System.out.println("X+N es "+(X+N));
-	System.out.println("Y+M es "+(Y+M));
-	System.out.println();
-		
+	System.out.println("Y/M es "+(Y/M));
+	System.out.println("Y%M es "+(Y%M));
+	System.out.println("el doble de la variable X es "+(2*X));
+	System.out.println("el doble de la variable Y es "+(2*Y));
+	System.out.println("el doble de la variable N es "+(2*N));
+	System.out.println("el doble de la variable M es "+(2*M));
+	System.out.println("la suma de todas las variables es "+(X+Y+N+M));
+	System.out.println("el producto de todas las variables es "+(X*Y*N*M));
+	
 	}
 
 }
