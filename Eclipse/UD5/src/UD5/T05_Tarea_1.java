@@ -15,8 +15,9 @@ public class T05_Tarea_1 {
 
 	}
 
-
-    public static void mains(String[] args) {
+}
+public class ComparacionVariables {
+    public static void main(String[] args) {
         // Declarar dos variables numéricas y asignarles valores
         int numero1 = 10;
         int numero2 = 5;
