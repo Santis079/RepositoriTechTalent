@@ -3,7 +3,7 @@ public class HorasEjercicio{
 	
 	public static void main(String[] args) {
         
-        int hora = 23; 
+        int hora = 20; 
 
 
         System.out.println("Hora puesta: " + hora);
