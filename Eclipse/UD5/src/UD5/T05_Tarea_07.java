@@ -6,7 +6,7 @@ public class T05_Tarea_07 {
 	    	
 	        int numerito = 1;
 
-	        while (numerito<= 100000000) {
+	        while (numerito<= 1000000000) {
 	            System.out.println(numerito);
 	            numerito++; 
 	        }
