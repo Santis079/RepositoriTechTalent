@@ -6,7 +6,6 @@ public class T05_Tarea_2 {
 		
 		String nombre="Rodrigo";
 		System.out.println("Bienvenido "+ nombre);
-
 	}
 
 }
