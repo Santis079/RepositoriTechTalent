@@ -1,6 +1,6 @@
 package UD5;
 
-public class T05_Tarea_1 {
+public class T05_Tarea_01 {
     public static void main(String[] args) {
         int X=4;
         int Y=7;

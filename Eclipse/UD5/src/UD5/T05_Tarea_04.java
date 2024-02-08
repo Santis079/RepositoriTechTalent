@@ -2,7 +2,7 @@ package UD5;
 
 import java.util.Scanner;
 
-public class T05_Tarea_4 {
+public class T05_Tarea_04 {
     public static void main(String[] args) {
     	
         Scanner escaner = new Scanner(System.in);

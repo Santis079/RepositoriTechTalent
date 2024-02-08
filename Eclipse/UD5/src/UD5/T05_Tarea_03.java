@@ -1,6 +1,6 @@
 package UD5;
 import javax.swing.JOptionPane;
-public class T05_Tarea_3 {
+public class T05_Tarea_03 {
 
 	public static void main(String[] args) {
 		

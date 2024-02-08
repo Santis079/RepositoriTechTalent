@@ -1,7 +1,7 @@
 package UD5;
 import javax.swing.JOptionPane;
 
-public class T05_Tarea_5 {
+public class T05_Tarea_05 {
     public static void main(String[] args) {
         String input = JOptionPane.showInputDialog("Ingresa un número entero:");
 
@@ -14,7 +14,6 @@ public class T05_Tarea_5 {
             mensaje = "El número " + numero + " no es divisible por 2.";
         }
 
-        // Mostrar el resultado utilizando JOptionPane
         JOptionPane.showMessageDialog(null, mensaje);
     }
 }
