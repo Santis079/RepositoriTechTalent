@@ -12,7 +12,7 @@ public class T05_Tarea_06 {
 
             double precioFinal = precio + (precio * TASA_IVA);
 
-            JOptionPane.showMessageDialog(null, "El precio final con IVA es: " + precioFinal);
+            JOptionPane.showMessageDialog(null, "El precio final con IVA es: " + precioFinal +"€");
 
         }
     }
