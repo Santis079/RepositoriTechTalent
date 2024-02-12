@@ -9,8 +9,7 @@ public class T05_Tarea_09 {
             if (numerito % 2 == 0 && numerito % 3 ==0) {
                 System.out.println(numerito);
             }
-            
-            numerito++;
+                    numerito++;
         }
     }
 }
