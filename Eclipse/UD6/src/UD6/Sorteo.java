@@ -7,19 +7,16 @@ public class Sorteo {
     public static void main(String[] args) {
         String[] participantes = new String[3];
 
-        // Pedir los nombres de los participantes
         for (int i = 0; i < 3; i++) {
             participantes[i] = JOptionPane.showInputDialog("Ingrese el nombre del participante " + (i + 1) + ":");
         }
 
-        // Mostrar los participantes en una lista numerada
         StringBuilder listaParticipantes = new StringBuilder("Lista de participantes:\n");
         for (int i = 0; i < participantes.length; i++) {
             listaParticipantes.append((i + 1)).append(". ").append(participantes[i]).append("\n");
         }
         JOptionPane.showMessageDialog(null, listaParticipantes.toString());
 
-        // Realizar el sorteo
         int indiceGanador = (int) (Math.random() * participantes.length);
         String ganador = participantes[indiceGanador];
         JOptionPane.showMessageDialog(null, "¡El ganador del sorteo es: " + ganador + "!");
