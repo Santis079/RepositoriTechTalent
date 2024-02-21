@@ -1,28 +1,34 @@
 package UD5;
+
 import javax.swing.JOptionPane;
 
 public class T05_Tarea_11 {
 
     public static void main(String[] args) {
-        String contraseña = "miContraseña123";
+        String diaSemanaString = JOptionPane.showInputDialog("Inserte un dia de la semana:");
 
-        int intentos = 3;
+        String mensajeResultado;
 
-        while (intentos > 0) {
-            String introduce = JOptionPane.showInputDialog("Introduce la contraseña:");
-
-            if (introduce != null && introduce.equals(contraseña)) {
-                JOptionPane.showMessageDialog(null, "¡Enhorabuena! Contraseña correcta.");
+        switch (diaSemanaString.toLowerCase()) {
+            case "lunes":
+            case "martes":
+            case "miércoles":
+            case "miercoles":
+            case "jueves":
+            case "viernes":
+                mensajeResultado = "Es un dia laboral.";
                 break;
-            } else {
-                intentos--;
-                JOptionPane.showMessageDialog(null, "Contraseña incorrecta. Intentos restantes: " + intentos);
-            }
+            case "sábado":
+            case "sabado":
+            case "domingo":
+                mensajeResultado = "No es un dia laboral.";
+                break;
+            default:
+                mensajeResultado = "Dia no valido.";
+                break;
         }
 
-        if (intentos == 0) {
-            JOptionPane.showMessageDialog(null, "Se agotaron los intentos. La aplicación se cerrará.");
-        }
+        JOptionPane.showMessageDialog(null, mensajeResultado);
     }
 }
 
