@@ -1,32 +1,75 @@
 package UD6;
 
+//import javax.swing.JOptionPane;
+//
+//public class T06_Tarea_04 {
+//
+//    public static void main(String[] args) {
+//
+//        int numero = obtenerNumeroEntero("Ingrese un número para calcular su factorial:");
+//
+//        int factorial = calcularFactorial(numero);
+//
+//        if (factorial != -1) {
+//            JOptionPane.showMessageDialog(null, "El factorial de " + numero + " es: " + factorial);
+//        } else {
+//            JOptionPane.showMessageDialog(null, "No se puede calcular el factorial. Ingrese un número no negativo.");
+//        }
+//    }
+//
+//    private static int calcularFactorial(int numero) {
+//        if (numero < 0) {
+//            return -1;
+//        }
+//
+//        int resultado = 1;
+//
+//        for (int i = 1; i <= numero; i++) {
+//
+//            if (Integer.MAX_VALUE / i < resultado) {
+//                return -1;
+//            }
+//
+//            resultado *= i;
+//        }
+//
+//        return resultado;
+//    }
+//
+//
+//    private static int obtenerNumeroEntero(String mensaje) {
+//        String input = JOptionPane.showInputDialog(mensaje);
+//        return Integer.parseInt(input);
+//    }
+//}
+
 import javax.swing.JOptionPane;
 
 public class T06_Tarea_04 {
 
     public static void main(String[] args) {
 
-        int numero = obtenerNumeroEntero("Ingrese un número para calcular su factorial:");
+        int numero = NumEntero("Numerito:");
 
-        int factorial = calcularFactorial(numero);
+        long factorial = calcularFactorial(numero);
 
         if (factorial != -1) {
             JOptionPane.showMessageDialog(null, "El factorial de " + numero + " es: " + factorial);
         } else {
-            JOptionPane.showMessageDialog(null, "No se puede calcular el factorial. Ingrese un número no negativo.");
+            JOptionPane.showMessageDialog(null, "Error no es un numero positivo o ha desbordado el programa");
         }
     }
 
-    private static int calcularFactorial(int numero) {
+    private static long calcularFactorial(int numero) {
         if (numero < 0) {
             return -1;
         }
 
-        int resultado = 1;
+        long resultado = 1;
 
         for (int i = 1; i <= numero; i++) {
 
-            if (Integer.MAX_VALUE / i < resultado) {
+            if (Long.MAX_VALUE / i < resultado) {
                 return -1;
             }
 
@@ -36,9 +79,8 @@ public class T06_Tarea_04 {
         return resultado;
     }
 
-
-    private static int obtenerNumeroEntero(String mensaje) {
-        String input = JOptionPane.showInputDialog(mensaje);
-        return Integer.parseInt(input);
+    private static int NumEntero(String mensaje) {
+        String TeikaNambah = JOptionPane.showInputDialog(mensaje);
+        return Integer.parseInt(TeikaNambah);
     }
 }

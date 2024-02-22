@@ -14,7 +14,6 @@ public class T06_Tarea_02 {
         Random(minimo, maximo, cuantos);
     }
 
-    // Método para generar números aleatorios en el rango especificado
     private static void Random(int minimo, int maximo, int cantidad) {
         Random random = new Random();
 
@@ -26,13 +25,11 @@ public class T06_Tarea_02 {
         }
     }
 
-    // Método para obtener un número entero del usuario
     private static int numerito2(String mensaje) {
         String input = JOptionPane.showInputDialog(mensaje);
         return Integer.parseInt(input);
     }
 
-    // Método para obtener un número del usuario
     private static int numerito(String mensaje) {
         String input = JOptionPane.showInputDialog(mensaje);
         return Integer.parseInt(input);
