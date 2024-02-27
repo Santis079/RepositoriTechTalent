@@ -16,10 +16,10 @@ public class ProvaClase {
         System.out.println("HashMap inicial:");
         mostrarEdadesAlumnos(edadesAlumnos);
 
-        agregarAlumnoDesdeInput(edadesAlumnos);//Antonio 3
-        agregarAlumnoDesdeInput(edadesAlumnos);//Jose 4
-        agregarAlumnoDesdeInput(edadesAlumnos);// Rodrigo 5
-//        agregarAlumnoDesdeInput(edadesAlumnos);// jordi 7
+        agregarAlumnoDesdeInput(edadesAlumnos);
+        agregarAlumnoDesdeInput(edadesAlumnos);
+        agregarAlumnoDesdeInput(edadesAlumnos);
+        agregarAlumnoDesdeInput(edadesAlumnos);
         
 
         System.out.println("\nHashMap después de agregar alumnos desde input:");
