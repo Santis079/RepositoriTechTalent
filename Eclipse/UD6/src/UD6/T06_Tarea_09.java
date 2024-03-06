@@ -6,7 +6,7 @@ public class T06_Tarea_09 {
 
     public static void main(String[] args) {
       
-        int tamañoArray = obtenerNumeroEntero("Ingrese el tamaño del array:");
+        int tamañoArray = obtenerNumeroEntero("Cuanto quieres que mida el array?");
 
         int[] array = new int[tamañoArray];
 
@@ -31,7 +31,7 @@ public class T06_Tarea_09 {
             suma += array[i];
         }
 
-        System.out.println("\nLa suma de todos los valores es: " + suma);
+        System.out.println("\nLa suma de todos los numeros es: " + suma);
     }
 
     private static int obtenerNumeroEntero(String mensaje) {

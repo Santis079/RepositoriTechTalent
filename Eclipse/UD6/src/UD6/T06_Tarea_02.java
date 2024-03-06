@@ -6,12 +6,12 @@ import java.util.Random;
 public class T06_Tarea_02 {
 
     public static void main(String[] args) {
-        int minimo = numerito("Ingrese el valor mínimo del rango:");
-        int maximo = numerito("Ingrese el valor máximo del rango:");
+        int min = numerito("De que numero? :");
+        int max = numerito("Hasta que numero? :");
 
         int cuantos = numerito2("Ingrese la cantidad de números a generar:");
 
-        Random(minimo, maximo, cuantos);
+        Random(min, max, cuantos);
     }
 
     private static void Random(int minimo, int maximo, int cantidad) {
