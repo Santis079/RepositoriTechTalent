@@ -42,19 +42,12 @@ public class EjercicioClase {
         mostrarGruposPorEdades(estudiantesTechTalent, 3);
     }
 
-  
-		// TODO Auto-generated method stub
-		
-	
-
-	// Método para mostrar la información de los estudiantes
     private static void mostrarEstudiantes(Map<String, Integer> estudiantes) {
         for (Map.Entry<String, Integer> entry : estudiantes.entrySet()) {
             System.out.println("Nombre " + entry.getKey() + ", Edad: " + entry.getValue());
         }
     }
 
-    // Método para formar y mostrar grupos de personas con keys random
     private static void mostrarGruposAleatorios(Map<String, Integer> estudiantes, int numGrupos, int personasPorGrupo) {
       List<String> keys = new ArrayList<>(estudiantes.keySet());
       Random random = new Random();
@@ -68,7 +61,6 @@ public class EjercicioClase {
         }
     }
 
-    // Método para formar y mostrar grupos por orden alfabético
     private static void mostrarGruposAlfabeticos(Map<String, Integer> estudiantes, int personasPorGrupo) {
         List<String> keys = new ArrayList<>(estudiantes.keySet());
         Collections.sort(keys);
@@ -82,7 +74,6 @@ public class EjercicioClase {
         }
     }
 
-    // Método para formar y mostrar grupos por edades de menor a mayor
     private static void mostrarGruposPorEdades(Map<String, Integer> estudiantes, int personasPorGrupo) {
         List<Map.Entry<String, Integer>> list = new ArrayList<>(estudiantes.entrySet());
         list.sort(Comparator.comparing(Map.Entry::getValue));
