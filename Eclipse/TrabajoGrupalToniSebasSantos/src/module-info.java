@@ -4,6 +4,6 @@
 /**
  * 
  */
-module UD8 {
+module TrabajoGrupalToniSebasSantos {
 	requires java.desktop;
 }
