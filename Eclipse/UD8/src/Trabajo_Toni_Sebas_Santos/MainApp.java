@@ -50,8 +50,8 @@ public class MainApp {
     private static void mostrarProductos(Producto...productos) {
         StringBuilder productosInfo = new StringBuilder();
         productosInfo.append("Lista de productos:\n");
-        productosInfo.append("Nombre\t\tPrecio\tCantidad Disponible\tIVA aplicado\n");
-        productosInfo.append("-----------------------------------\n");
+        productosInfo.append("Nombre  Precio  Cantidad Disponible  IVA aplicado\n");
+        productosInfo.append("---------------------------------------------------------------------------\n");
         for (Producto producto : productos) {
             productosInfo.append(producto.getNombre()).append("\t\t€").append(producto.getPrecio()).append("\t\t")
                     .append(producto.getCantidadDisponible()).append("\t\t\t").append(producto.getIva()).append("\n");
